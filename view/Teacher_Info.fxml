@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Teacher_Info_view">
+   <children>
+      <SplitPane prefHeight="600.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane fx:id="Student_info_anchor" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="DeleteTeacherImage" fitHeight="115.0" fitWidth="91.0" layoutX="224.0" layoutY="78.0">
+                     <image>
+                        <Image url="@../resources/DeleteStudent.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="TeacherImage" fitHeight="159.0" fitWidth="161.0" layoutX="782.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Teacher-male-icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <VBox layoutX="144.0" layoutY="212.0" prefHeight="355.0" prefWidth="802.0" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="17.0">
+                     <children>
+                        <HBox prefHeight="53.0" prefWidth="919.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="Teacher_phone" nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="689.0" text="      لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="45.0" prefWidth="139.0" text="رقم الهاتف">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox spacing="200.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="917.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="TeacherClass" nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="689.0" text="          لاتوجد بيانات للعرض">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="53.0" prefWidth="53.0" text="الشعبة">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="259.0" layoutY="346.0" prefHeight="53.0" prefWidth="815.0" spacing="200.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="807.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="Teacher_Email" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="684.0" text="لاتوجد بيانات للعرض">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="195.0" text="البريد الإلكتروني">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="53.0" prefWidth="628.0" spacing="20.0">
+                           <children>
+                              <HBox prefHeight="42.0" prefWidth="530.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="alternatives" nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="329.0" text="لاتوجد بيانات للعرض">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="42.0" prefWidth="185.0" text="العلاوات والبدلات">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="42.0" prefWidth="444.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="Salary" nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="232.0" text="لاتوجد بيانات للعرض">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="196.0" text="صافي الراتب">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="809.0" spacing="30.0">
+                           <children>
+                              <HBox prefHeight="54.0" prefWidth="404.0" spacing="10.0" />
+                              <Label fx:id="Transp_fees" nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="326.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="53.0" prefWidth="189.0" text="رسوم الترحيل">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="125.0" prefWidth="809.0" spacing="170.0">
+                           <children>
+                              <HBox prefHeight="162.0" prefWidth="809.0" spacing="10.0">
+                                 <children>
+                                    <TextArea fx:id="Teacher_Address" editable="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="118.0" prefWidth="311.0" promptText="لاتوجد بيانات للعرض">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="26.0" />
+                                       </font>
+                                    </TextArea>
+                                    <Label prefHeight="53.0" prefWidth="84.0" text="عنوان السكن">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="118.0" prefWidth="386.0" spacing="10.0">
+                                       <children>
+                                          <TextArea fx:id="Transp_Name" nodeOrientation="RIGHT_TO_LEFT" prefHeight="118.0" prefWidth="310.0" promptText="لاتوجد بيانات للعرض">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="24.0" />
+                                             </font>
+                                          </TextArea>
+                                          <Label prefHeight="53.0" prefWidth="89.0" text="الترحيل">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="29.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="288.0" layoutY="85.0">
+                     <children>
+                        <HBox layoutX="268.0" layoutY="28.0" spacing="200.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="427.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="Teacher_name" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="333.0" text="لاتوجد بيانات للعرض">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="53.0" prefWidth="80.0" text="اسم المعلم ">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="260.0" layoutY="76.0" prefHeight="53.0" prefWidth="435.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="Teacher_ID" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="341.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="53.0" prefWidth="97.0" text="الرقم التسلسلي">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="101.0" layoutY="602.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="62.0" prefWidth="832.0" spacing="15.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="602.0">
+                     <children>
+                        <Button disable="true" layoutX="794.0" layoutY="620.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="174.0" text="تفاصيل الرواتب والأجور">
+                           <font>
+                              <Font name="Arabic Typesetting" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button disable="true" mnemonicParsing="false" prefHeight="63.0" prefWidth="174.0" text="الحضور والغياب">
+                           <font>
+                              <Font name="Arabic Typesetting" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button disable="true" mnemonicParsing="false" prefHeight="63.0" prefWidth="174.0" text="إشراف النتائج">
+                           <font>
+                              <Font name="Arabic Typesetting" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#EditCliked" prefHeight="63.0" prefWidth="174.0" text="تعديل بيانات المعلم">
+                           <font>
+                              <Font name="Arabic Typesetting" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="DeleteTeacherLabel" layoutX="205.0" layoutY="186.0" text="حذف بيانات المعلم" textFill="#db520d">
+                     <font>
+                        <Font name="Arabic Typesetting" size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

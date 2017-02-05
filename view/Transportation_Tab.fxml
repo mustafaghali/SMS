@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import wizards.*?>
+
+<AnchorPane fx:id="Addanchor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Transportation_Tab_Controller">
+   <children>
+      <TabPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="598.0" prefWidth="696.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="30.0" tabMinWidth="220.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="البحث">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.25" layoutX="333.0" layoutY="72.0" orientation="VERTICAL" prefHeight="518.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane fx:id="search_Class_pane" minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" layoutX="14.0" prefHeight="17.0" prefWidth="115.0" text="ابحث عن ترحيل" textAlignment="RIGHT" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="240.0" layoutY="40.0" prefHeight="34.0" prefWidth="101.0" text="    الرقم التسلسلي" AnchorPane.leftAnchor="240.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="129.0" layoutY="40.0" prefHeight="34.0" prefWidth="91.0" text="الوجهة/الوجهات" AnchorPane.leftAnchor="100.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="417.0" layoutY="42.0" prefHeight="34.0" prefWidth="89.0" text="اسم السائق" AnchorPane.leftAnchor="417.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox layoutX="26.0" layoutY="81.0" prefHeight="37.0" prefWidth="499.0" spacing="30.0">
+                                       <children>
+                                          <TextField fx:id="Destination" prefHeight="36.0" prefWidth="218.0" />
+                                          <TextField fx:id="Transportation_ID" prefHeight="37.0" prefWidth="94.0" />
+                                          <TextField fx:id="Driver" prefHeight="36.0" prefWidth="218.0" />
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="SearchLabel" layoutX="681.0" layoutY="111.0" prefHeight="40.0" prefWidth="47.0" text="ابحث">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="SearchIcon" fitHeight="79.0" fitWidth="66.0" layoutX="660.0" layoutY="35.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <image>
+                                          <Image url="@../resources/SearchIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="ShowAllImage" fitHeight="87.0" fitWidth="92.0" layoutX="816.0" layoutY="38.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <image>
+                                          <Image url="@../resources/bus_icon256.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="ShowAllLabel" alignment="CENTER" layoutX="814.0" layoutY="114.0" prefHeight="34.0" prefWidth="97.0" text="عرض الجميع">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.7174139728884255" layoutX="502.0" layoutY="40.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="476.0" prefWidth="961.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="474.0" prefWidth="376.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="91.0" text="نتائج البحث" textFill="#289e13">
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <TableView fx:id="tabel" layoutX="5.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="407.0" prefWidth="470.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="46.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ID" editable="false" prefWidth="108.0" sortable="false" text="الرقم التسلسلي" />
+                                                      <TableColumn fx:id="Destination_Name" prefWidth="360.0" text="الوجهة" />
+                                                      <TableColumn fx:id="Driver_name" minWidth="0.0" prefWidth="208.0" text="اسم السائق" />
+                                                   </columns>
+                                                   <effect>
+                                                      <Reflection />
+                                                   </effect>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="الإضافة">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="15.0" layoutY="178.0" prefHeight="133.0" prefWidth="927.0" spacing="70.0">
+                           <children>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="133.0" prefWidth="515.0">
+                                 <children>
+                                    <Label layoutX="158.0" layoutY="88.0" prefHeight="40.0" prefWidth="150.0" text="وصف الوجهة/الوجهات">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="NewDestination" prefHeight="124.0" prefWidth="339.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="53.0" layoutY="321.0" prefHeight="164.0" prefWidth="897.0" spacing="5.0" AnchorPane.leftAnchor="53.0">
+                           <children>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="349.0">
+                                 <children>
+                                    <Label layoutX="158.0" layoutY="88.0" prefHeight="40.0" prefWidth="107.0" text="اسم السائق">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="NewDriver" prefHeight="42.0" prefWidth="246.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="176.0">
+                                 <children>
+                                    <Label prefHeight="42.0" prefWidth="109.0" text="رسوم الترحيل">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="NewFees" prefHeight="42.0" prefWidth="96.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="50.0">
+                                 <children>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="354.0">
+                                       <children>
+                                          <Label prefHeight="42.0" prefWidth="107.0" text="نوع العربة">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="newvehicle" nodeOrientation="RIGHT_TO_LEFT" prefHeight="37.0" prefWidth="199.0" promptText="اختر نوع العربة" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="200.0" />
+                              <VBox prefHeight="229.0" prefWidth="386.0">
+                                 <children>
+                                    <HBox prefHeight="42.0" prefWidth="503.0" spacing="100.0">
+                                       <children>
+                                          <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="419.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="131.0" prefWidth="425.0" spacing="20.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <ImageView fx:id="AddTransportationPhoto" fitHeight="93.0" fitWidth="88.0" layoutX="204.0" layoutY="475.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="673.0">
+                           <image>
+                              <Image url="@../resources/backup1.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label fx:id="AddTransportationLabel" alignment="CENTER" layoutX="170.0" layoutY="568.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="46.0" prefWidth="161.0" text="إضافة الترحيل" textAlignment="CENTER" textFill="#842eb0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="643.0">
+                           <font>
+                              <Font name="Arabic Typesetting" size="29.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="136.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/vector_218_22-01-512.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab disable="true" text="إحصائيات التراحيل">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab disable="true" text="الحسابات">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

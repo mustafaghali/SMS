@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="700.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.WorkerPayment_Info">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="698.0" prefWidth="967.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="676.0" prefWidth="466.0">
+               <children>
+                  <Label fx:id="DeleteWorkerLabel" layoutX="342.0" layoutY="646.0" prefHeight="37.0" prefWidth="125.0" text="حذف بيانات الدفعية" textFill="#db520d">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arabic Typesetting" size="27.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="40.0" layoutY="162.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="169.0" prefWidth="402.0">
+                     <children>
+                        <HBox prefHeight="43.0" prefWidth="402.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="37.0" prefWidth="143.0" text="نوع الدفعية">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Type" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="37.0" prefWidth="223.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="244.0" text="اسم العامل">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Name" prefHeight="40.0" prefWidth="318.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="43.0" prefWidth="402.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="146.0" text="طبيعة العمل">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Job" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="232.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="252.0" text="تاريخ الدفعية">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Date" prefHeight="40.0" prefWidth="318.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="246.0" text="قيمة الدفعية">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Value" prefHeight="40.0" prefWidth="318.0" text="لاتوجد بيانات للعرض">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="DeleteWorkerImage" fitHeight="78.0" fitWidth="75.0" layoutX="364.0" layoutY="567.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../resources/DeleteStudent.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="28.0" layoutY="105.0" prefHeight="43.0" prefWidth="113.0" text="بيانات الدفعية" textFill="#11974b">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arabic Typesetting" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="Details" layoutX="15.0" layoutY="446.0" prefHeight="95.0" prefWidth="453.0" promptText="لاتوجد بيانات للعرض">
+                     <font>
+                        <Font name="Arabic Typesetting" size="24.0" />
+                     </font></TextArea>
+                  <Label layoutX="37.0" layoutY="398.0" prefHeight="40.0" prefWidth="97.0" text="تفاصيل أخرى">
+                     <font>
+                        <Font name="Arabic Typesetting" size="29.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="139.0" fitWidth="143.0" layoutX="330.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Money.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="PrintLabel" layoutX="10.0" layoutY="644.0" prefHeight="40.0" prefWidth="177.0" text="طباعة إشعار إستلام نقدي">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arabic Typesetting" size="29.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="PrintImage" fitHeight="95.0" fitWidth="113.0" layoutX="36.0" layoutY="551.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../resources/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="641.0" prefWidth="543.0">
+               <children>
+                  <ImageView fx:id="ConfirmEditImage" fitHeight="78.0" fitWidth="83.0" layoutX="385.0" layoutY="545.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../resources/Edit.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ConfirmEditLabel" alignment="CENTER" layoutX="370.0" layoutY="623.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="34.0" prefWidth="97.0" text="تأكيد التعديل" textAlignment="CENTER" textFill="#ff6600">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arabic Typesetting" size="34.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="35.0" layoutY="157.0" prefHeight="95.0" prefWidth="402.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="37.0" prefWidth="439.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="161.0" text="اسم العامل">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="NewName" prefHeight="38.0" prefWidth="240.0" promptText="اختر اسم العامل" />
+                           </children>
+                        </HBox>
+                        <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="354.0">
+                           <children>
+                              <Label prefHeight="37.0" prefWidth="164.0" text="تاريخ الدفعية">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="27.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="NewDate" prefHeight="37.0" prefWidth="244.0" promptText="اختر تاريخ الدفعية" />
+                           </children>
+                        </HBox>
+                        <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="349.0">
+                           <children>
+                              <Label layoutX="158.0" layoutY="88.0" prefHeight="40.0" prefWidth="164.0" text="نوع الدفعية">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="NewType" prefHeight="38.0" prefWidth="239.0" promptText="اختر نوع الدفعية" />
+                           </children>
+                        </HBox>
+                        <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="402.0">
+                           <children>
+                              <Label prefHeight="37.0" prefWidth="163.0" text="قيمة الدفعية">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="27.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="NewValue" prefHeight="37.0" prefWidth="240.0" promptText="ادخل قيمة الدفعية" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label layoutX="65.0" layoutY="91.0" prefHeight="43.0" prefWidth="165.0" text="تعديل بيانات الدفعية" textFill="#ff4200de">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arabic Typesetting" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="NewDetails" layoutX="17.0" layoutY="450.0" prefHeight="95.0" prefWidth="453.0" promptText="لاتوجد بيانات للعرض">
+                     <font>
+                        <Font name="Arabic Typesetting" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="128.0" fitWidth="143.0" layoutX="328.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../resources/18-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="41.0" layoutY="403.0" prefHeight="40.0" prefWidth="147.0" text="تفاصيل أخرى">
+                     <font>
+                        <Font name="Arabic Typesetting" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

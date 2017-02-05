@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="background" stylesheets="@FORM%20WITH%20EFFECT.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Border_Control">
+   <top>
+      <MenuBar fx:id="MenuBar" nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="TOP_RIGHT">
+        <menus>
+          <Menu mnemonicParsing="false" text="الملفات">
+            <items>
+              <MenuItem mnemonicParsing="false" text="إغلاق النافذة" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="الإعدادات">
+            <items>
+              <MenuItem fx:id="ControlPanel" mnemonicParsing="false" text="نافذة التحكم" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="العرض">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="تغيير الألوان" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="الدليل">
+            <items>
+              <MenuItem fx:id="aboutSMS" mnemonicParsing="false" text="عن البرنامج" />
+                  <MenuItem fx:id="aboutSEMICOLON" mnemonicParsing="false" text="  الموقع الالكتروني لSEMICOLON ICT" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane fx:id="circle_parent" prefHeight="780.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.06" orientation="VERTICAL" prefHeight="780.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane fx:id="upperAnchorPane" minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <HBox layoutX="1102.0" layoutY="4.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="713.0" spacing="10.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="1102.0" AnchorPane.rightAnchor="-537.0" AnchorPane.topAnchor="4.0">
+                           <children>
+                              <ImageView fx:id="Reload" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/Refresh.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="Back" fitHeight="32.0" fitWidth="34.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/undo.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="minimize" fitHeight="32.0" fitWidth="34.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/min.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="exit" fitHeight="30.0" fitWidth="34.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/Close.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.756" prefHeight="600.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <BorderPane fx:id="InnerBoarder" prefHeight="200.0" prefWidth="200.0" />
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutY="91.0" minWidth="290.0" prefHeight="607.0" prefWidth="308.0" spacing="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="91.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Student_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="الطلاب">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/DefautStudent.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Teacher_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="المعلمين">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/Teacher-male-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Worker_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="العمال">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/worker.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Sclass_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="الفصول المواد والشعب">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/classroom%20R.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Transportation_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="التراحيل">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="56.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/vector_218_22-01-512.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Results_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="النتائج">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/resulticon1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#Financials_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="المعاملات المالية">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/Money.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button disable="true" mnemonicParsing="false" onAction="#Calender_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="التقويم والملاحظات">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="24.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/Calendar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button disable="true" mnemonicParsing="false" onAction="#Reports_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="التقارير والإحصاءات">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="24.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/statistics.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Button disable="true" mnemonicParsing="false" onAction="#Attendance_Tab_Clicked" prefHeight="40.0" prefWidth="240.0" text="الحضور والغياب">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="24.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="50.0" fitWidth="68.0">
+                                                   <image>
+                                                      <Image url="@../resources/Attendance.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets top="37.0" />
+                                       </padding>
+                                    </VBox>
+                                    <ImageView fitHeight="132.0" fitWidth="309.0" layoutX="-1.0" layoutY="-4.0">
+                                       <image>
+                                          <Image url="@../resources/net.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

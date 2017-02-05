@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import wizards.*?>
+
+<AnchorPane fx:id="Addanchor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SClasses_Tab_Controller">
+   <children>
+      <TabPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="598.0" prefWidth="695.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="30.0" tabMinWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="بحث الفصول">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.25" layoutX="333.0" layoutY="72.0" orientation="VERTICAL" prefHeight="518.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane fx:id="search_Class_pane" minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" layoutX="14.0" prefHeight="17.0" prefWidth="115.0" text="ابحث عن فصل" textAlignment="RIGHT" AnchorPane.leftAnchor="10.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="240.0" layoutY="40.0" prefHeight="34.0" prefWidth="101.0" text="    الرقم التسلسلي" AnchorPane.leftAnchor="240.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="129.0" layoutY="40.0" prefHeight="34.0" prefWidth="91.0" text="اسم الفصل" AnchorPane.leftAnchor="100.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="440.0" layoutY="40.0" prefHeight="34.0" prefWidth="54.0" text="المستوى" AnchorPane.leftAnchor="440.0">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox layoutX="26.0" layoutY="81.0" prefHeight="37.0" prefWidth="499.0" spacing="30.0">
+                                       <children>
+                                          <TextField fx:id="Class_name" prefHeight="36.0" prefWidth="218.0" />
+                                          <TextField fx:id="Class_ID" prefHeight="37.0" prefWidth="94.0" />
+                                          <ComboBox fx:id="SearchLevels" layoutX="294.0" layoutY="83.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="33.0" prefWidth="176.0" promptText="اختر المستوى" styleClass="combo-box-base">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ComboBox>
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="SearchLabel" layoutX="675.0" layoutY="113.0" prefHeight="40.0" prefWidth="47.0" text="ابحث">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="SearchIcon" fitHeight="79.0" fitWidth="66.0" layoutX="664.0" layoutY="42.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <image>
+                                          <Image url="@../resources/SearchIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="ShowAllLabel" alignment="CENTER" layoutX="830.0" layoutY="116.0" prefHeight="34.0" prefWidth="97.0" text="عرض الجميع">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="ShowAllImage" fitHeight="91.0" fitWidth="93.0" layoutX="827.0" layoutY="25.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <image>
+                                          <Image url="@../resources/classroom%20R.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.5" layoutX="502.0" layoutY="40.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="476.0" prefWidth="961.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="474.0" prefWidth="376.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="91.0" text="نتائج البحث" textFill="#289e13">
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <TableView fx:id="tabel" layoutX="5.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="407.0" prefWidth="470.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="46.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ID" editable="false" prefWidth="108.0" sortable="false" text="الرقم التسلسلي" />
+                                                      <TableColumn fx:id="Name" prefWidth="261.0" text="اسم الفصل" />
+                                                      <TableColumn fx:id="ClassLevel" minWidth="0.0" prefWidth="99.0" text="المستوى" />
+                                                   </columns>
+                                                   <effect>
+                                                      <Reflection />
+                                                   </effect>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="إضافة فصل">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="5.0" layoutY="157.0" prefHeight="164.0" prefWidth="939.0" spacing="5.0" AnchorPane.leftAnchor="10.0">
+                           <children>
+                              <HBox spacing="80.0">
+                                 <children>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="419.0">
+                                       <children>
+                                          <Label layoutX="158.0" layoutY="88.0" prefHeight="40.0" prefWidth="119.0" text="اسم الفصل ">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="NewClassName" prefHeight="42.0" prefWidth="314.0">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="20.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="268.0">
+                                       <children>
+                                          <Label prefHeight="42.0" prefWidth="86.0" text="المستوى">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="NewClassLevel" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="209.0" promptText="اختر المستوى">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ComboBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="140.0" />
+                              <HBox spacing="50.0">
+                                 <children>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT">
+                                       <children>
+                                          <Label layoutX="158.0" layoutY="88.0" prefHeight="40.0" prefWidth="114.0" text="السعة">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="NewCapacity" prefHeight="42.0" prefWidth="90.0">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="20.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="174.0">
+                                       <children>
+                                          <Label prefHeight="42.0" prefWidth="88.0" text="رسوم الدراسة">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="NewStudyingFees" prefHeight="42.0" prefWidth="78.0">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="20.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="174.0">
+                                       <children>
+                                          <Label prefHeight="42.0" prefWidth="142.0" text="رسوم مجلس الاباء">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="NewFatherSeetsFees" prefHeight="42.0" prefWidth="96.0">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="20.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <Label prefHeight="42.0" prefWidth="147.0" text="رسوم الكورس الصيفي">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="NewSummerCourseFees" prefHeight="42.0" prefWidth="96.0">
+                                             <font>
+                                                <Font name="Arabic Typesetting" size="20.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="200.0" />
+                              <VBox prefHeight="229.0" prefWidth="386.0">
+                                 <children>
+                                    <HBox prefHeight="42.0" prefWidth="503.0" spacing="100.0">
+                                       <children>
+                                          <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="53.0" prefWidth="419.0">
+                                             <children>
+                                                <Label layoutX="158.0" layoutY="88.0" prefHeight="40.0" prefWidth="188.0" text="اسم مرشد الفصل">
+                                                   <font>
+                                                      <Font name="Arabic Typesetting" size="29.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="NewSupervisor" prefHeight="41.0" prefWidth="345.0" promptText="اختر معلما">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ComboBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="131.0" prefWidth="425.0" spacing="20.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <ImageView fx:id="AddClassPhoto" fitHeight="103.0" fitWidth="91.0" layoutX="772.0" layoutY="321.0" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="772.0" AnchorPane.rightAnchor="102.0">
+                           <image>
+                              <Image url="@../resources/backup1.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label fx:id="AddClassLabel" alignment="CENTER" layoutX="757.0" layoutY="430.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="22.0" prefWidth="117.0" text="إضافة الفصل" textAlignment="CENTER" textFill="#842eb0" AnchorPane.leftAnchor="757.0" AnchorPane.rightAnchor="91.0">
+                           <font>
+                              <Font name="Arabic Typesetting" size="28.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="136.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/classroom%20R.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="المواد">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="AddSubjectImage" fitHeight="99.0" fitWidth="84.0" layoutX="824.0" layoutY="195.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../resources/backup1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="57.0" layoutY="54.0" prefHeight="17.0" prefWidth="87.0" text="الصف الأول">
+                           <font>
+                              <Font name="Arabic Typesetting" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="267.0" layoutY="54.0" prefHeight="17.0" prefWidth="87.0" text="الصف الثاني">
+                           <font>
+                              <Font name="Arabic Typesetting" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="458.0" layoutY="54.0" prefHeight="17.0" prefWidth="87.0" text="الصف الثالث">
+                           <font>
+                              <Font name="Arabic Typesetting" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="606.0" layoutY="37.0" prefHeight="40.0" prefWidth="96.0" text="إضافة مادة " textFill="#1fae23">
+                           <font>
+                              <Font name="Arabic Typesetting" size="35.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="600.0" layoutY="86.0" prefHeight="41.0" prefWidth="349.0">
+                           <children>
+                              <Label layoutX="641.0" layoutY="91.0" prefHeight="40.0" prefWidth="125.0" text="اسم المادة">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Subject_name" layoutX="720.0" layoutY="99.0" prefHeight="41.0" prefWidth="263.0" promptText="ادخل اسم المادة">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="19.0" />
+                                 </font></TextField>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="596.0" layoutY="136.0" prefHeight="41.0" prefWidth="357.0">
+                           <children>
+                              <Label layoutX="615.0" layoutY="131.0" prefHeight="40.0" prefWidth="111.0" text="المستوى الدراسي">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="SubjectLevel" prefHeight="40.0" prefWidth="246.0" promptText="اختر المستوى الدراسي" />
+                           </children>
+                        </HBox>
+                        <Label layoutX="612.0" layoutY="338.0" prefHeight="40.0" prefWidth="96.0" text="حذف مادة" textFill="#ff2600">
+                           <font>
+                              <Font name="Arabic Typesetting" size="35.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="600.0" layoutY="437.0" prefHeight="41.0" prefWidth="357.0">
+                           <children>
+                              <Label layoutX="615.0" layoutY="131.0" prefHeight="40.0" prefWidth="111.0" text="المستوى الدراسي">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="SubjectLevel1" prefHeight="40.0" prefWidth="246.0" promptText="اختر المستوى الدراسي" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="604.0" layoutY="387.0" prefHeight="41.0" prefWidth="349.0">
+                           <children>
+                              <Label layoutX="641.0" layoutY="91.0" prefHeight="40.0" prefWidth="125.0" text="اسم المادة">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Subject_name1" layoutX="720.0" layoutY="99.0" prefHeight="41.0" prefWidth="263.0" promptText="ادخل اسم المادة">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="19.0" />
+                                 </font></TextField>
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="DeleteSubjectImage" fitHeight="96.0" fitWidth="79.0" layoutX="834.0" layoutY="495.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../resources/DeleteStudent.png" />
+                           </image>
+                        </ImageView>
+                        <ListView fx:id="list1" layoutX="14.0" layoutY="98.0" prefHeight="529.0" prefWidth="179.0" />
+                        <ListView fx:id="list2" layoutX="209.0" layoutY="98.0" prefHeight="529.0" prefWidth="179.0" />
+                        <ListView fx:id="list3" layoutX="406.0" layoutY="98.0" prefHeight="529.0" prefWidth="179.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="شعب المعلمين">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="36.0" layoutY="22.0" prefHeight="40.0" prefWidth="98.0" text="قائمة الشعب">
+                           <font>
+                              <Font name="Arabic Typesetting" size="29.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="590.0" layoutY="37.0">
+                           <children>
+                              <Label layoutX="606.0" layoutY="37.0" prefHeight="40.0" prefWidth="96.0" text="إضافة شعبة" textFill="#1fae23">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="35.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutX="600.0" layoutY="86.0" prefHeight="41.0" prefWidth="349.0">
+                                 <children>
+                                    <Label layoutX="641.0" layoutY="91.0" prefHeight="40.0" prefWidth="125.0" text="اسم الشعبة">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="NewTeacherClass" layoutX="720.0" layoutY="99.0" prefHeight="41.0" prefWidth="263.0" promptText="ادخل اسم الشعبة">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="19.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <ImageView fx:id="AddTeacherClassImage" fitHeight="82.0" fitWidth="81.0" layoutX="868.0" layoutY="127.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/backup1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="614.0" layoutY="168.0" prefHeight="40.0" prefWidth="96.0" text="حذف شعبة" textFill="#ff2600">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="35.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutX="590.0" layoutY="217.0" prefHeight="41.0" prefWidth="349.0">
+                                 <children>
+                                    <Label layoutX="641.0" layoutY="91.0" prefHeight="40.0" prefWidth="107.0" text="اختر الشعبة">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="TeacherClasses1" prefHeight="39.0" prefWidth="239.0" promptText="اختر الشعبة" />
+                                 </children>
+                              </HBox>
+                              <ImageView fx:id="DeleteTeacherClassImage" fitHeight="85.0" fitWidth="78.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/DeleteStudent.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <ListView fx:id="TeacherClassesList" layoutX="15.0" layoutY="62.0" prefHeight="529.0" prefWidth="179.0" />
+                        <Label layoutX="280.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="قائمة المعلمين">
+                           <font>
+                              <Font name="Arabic Typesetting" size="29.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="TeachersList" layoutX="278.0" layoutY="63.0" prefHeight="529.0" prefWidth="179.0" />
+                        <Label fx:id="TeacherClassLabel" layoutX="367.0" layoutY="26.0" text="(اضغط على اسم الشعبة لعرض قائمة المعلمين)" />
+                        <VBox layoutX="568.0" layoutY="384.0" spacing="3.0">
+                           <children>
+                              <Label layoutX="591.0" layoutY="368.0" prefHeight="49.0" prefWidth="165.0" text="إضافة معلم إلى الشعبة" textFill="#1fae23">
+                                 <font>
+                                    <Font name="Arabic Typesetting" size="35.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutX="568.0" layoutY="425.0" prefHeight="40.0" prefWidth="366.0">
+                                 <children>
+                                    <Label layoutX="568.0" layoutY="425.0" prefHeight="40.0" prefWidth="125.0" text="اسم الشعبة">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="TeacherClasses" layoutX="740.0" layoutY="432.0" prefHeight="39.0" prefWidth="239.0" promptText="اختر الشعبة" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="571.0" layoutY="478.0" prefHeight="40.0" prefWidth="366.0">
+                                 <children>
+                                    <Label layoutX="568.0" layoutY="425.0" prefHeight="40.0" prefWidth="125.0" text="اسم المعلم">
+                                       <font>
+                                          <Font name="Arabic Typesetting" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="TeachersNames" layoutX="740.0" layoutY="432.0" prefHeight="39.0" prefWidth="239.0" promptText="اختر اسم المعلم" />
+                                 </children>
+                              </HBox>
+                              <ImageView fx:id="ConfirmEditImage" fitHeight="88.0" fitWidth="82.0" layoutX="863.0" layoutY="523.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <image>
+                                    <Image url="@../resources/Edit.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="AddnewTeacherLabel" prefHeight="24.0" prefWidth="129.0" text="انقر هنا لإضافة معلم جديد" textFill="#bf771d">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Label>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="83.0" fitWidth="73.0" layoutX="195.0" layoutY="244.0">
+                           <image>
+                              <Image url="@../resources/Arrow.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

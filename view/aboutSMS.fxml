@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controlled_Screen">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="965.0">
+         <image>
+            <Image url="@../resources/BG.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="150.0" prefWidth="778.0" text="SMICOLON High Schools Management System (HSMS)" textFill="#1aa11a">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <VBox layoutX="21.0" layoutY="136.0">
+         <children>
+            <Label layoutX="21.0" layoutY="136.0" prefHeight="93.0" prefWidth="929.0" text="Is desktop software developed by SEMICOLON ICT to help high schools managers" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="227.0" prefHeight="74.0" prefWidth="929.0" text=" centerlize, manage and monitor their transactions and flow of data." textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="271.0" prefHeight="70.0" prefWidth="922.0" text="HSMS has been designed to be user friendly, so any user with no previous accounting" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="70.0" prefWidth="922.0" text="or data entry experience could deal with it." textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
